@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+@font-face {
+    font-family: baron;
+    src: url(fonts/baron/BaronNeue.otf);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 100%;
+}
+
+a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    height: 72px;
+}
+
+.menu {
+    display: flex;
+    color: #333333;
+    font-size: bold;
+    gap: 100px;
+    align-items: center;
+}
+
+.link__header {
+    display: flex;
+    color: #333333;
+     font-weight: bold;
+    font-size: 16px;
+}
+
+.header__input {
+    display: flex;
+}
+
+.header__input__field {
+    flex: 1;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 2px;
+    width: 300px;
+    margin-right: 10px;
+}
+
+.header__input__img {
+    width: 30px; /* Defina o tamanho desejado para a largura da imagem */
+    height: auto; /* A altura será ajustada automaticamente de acordo com a largura */
+}
+
+
+.content {
+    border-top: 0.4px solid #466B3B;
+}
+
+
+.section__one {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: #355129 url(images/starbucks-1281880_1280.jpg) right bottom 50%/cover;
+    padding: 100px;
+    margin-bottom: 70px;
+}
+
+.section__one__text__title {
+    font-family: Baron;
+    color: #cab196;
+    font-size: 100px;
+    font-weight: bolder;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.section__one__text__subtitle {
+    display: block;    
+    color: #f1e7db;
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 100px;
+}
+
+.section__one__button {
+    font-family: baron;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px 40px 15px;
+    background-color: #466B3B;
+    color: #fff;
+    margin-top: 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    }
+
+    .section__one__button:hover {
+        background-color: #355129;
+    }
+
+.section__two {
+    background:#355129 url(images/coffee-4512564_1280.jpg) center/cover no-repeat fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section__two__text {
+    color: #FFFFFF;
+    justify-content: center;
+    margin: 5%;
+    text-align: center;
+}
+
+.section__two__text__title {
+    font-family: Baron;
+    font-size: 50px;
+    font-weight: 400;
+    padding-bottom: 50px;
+}
+
+.section__two__text__subtitle {
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 50px;
+}
+
+.section__two__text__paragraph {
+    display: block;
+    font-size: 20px;
+    padding-bottom: 50px;
+}
+
+.section__two__button {
+    font-size: 16px;
+    font-family: baron;
+    padding: 10px 40px 15px;
+    background-color: #f1eeeb;
+    color: #333333;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.section__two__button:hover {
+    background-color: #cab196;
+}
+
+.footer {
+    background-color: #355129;
+    color: #FFFFFF;
+    padding: 5%;
+    justify-content: center;
+    text-align: center;
+}
+.footer__about {
+    display: flex;
+    border-top: 0.4px solid #f1e7db;
+    padding-top:50px;
+    border-bottom: 0.4px solid #f1e7db;
+    padding-bottom: 25px;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.footer__about__link,
+.footer__responsibility__link,
+.footer__quick__links__link,
+.footer__social__media__link {
+    color: #ccc;
+    margin-top: 20px ;
+    margin-bottom: 10px;
+    display: block; 
+}
+
+
+.footer__about ul,
+.footer__responsibility ul,
+.footer__quick-links ul,
+.footer__social-media ul {
+    list-style-type: none;
+    
+}
+.footer__legal__text {
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+.footer__copyright {
+    padding-top: 5px;
+    font-size: 0.9rem; /* Tamanho da fonte */
+}
+
+/* Estilos para dispositivos móveis */
+@media only screen and (max-width: 600px) {
+    .section__one {
+        background-size: cover; /* Ajusta o tamanho da imagem de fundo para cobrir todo o container */
+    }
+
+    .section__two {
+        background-size: cover; /* Ajusta o tamanho da imagem de fundo para cobrir todo o container */
+    }
+    .menu {
+        font-size: 14px; /* Reduza o tamanho da fonte do menu */
+        gap: 20px; /* Ajuste o espaçamento entre os itens do menu */
+    }
+
+    /* Ajuste o tamanho do input */
+    .header__input__field {
+        width: 200px; /* Reduza a largura do input */
+        font-size: 14px; /* Reduza o tamanho da fonte do input */
+    }
+}
