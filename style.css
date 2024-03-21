@@ -17,6 +17,10 @@ body {
     font-size: 100%;
 }
 
+img {
+    max-width: 100%;
+}
+
 a:hover {
     font-weight: bold;
     text-decoration: underline;
@@ -66,16 +70,12 @@ a:hover {
     height: auto;
 }
 
-.content {
-    border-top: 0.4px solid #466B3B;
-}
-
 .section__one {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background: #355129 url(images/starbucks-1281880_1280.jpg) right bottom 50%/cover;
+    background: #355129 url(images/coffee-5495609_1280.jpg) right bottom 20%/cover;
     padding: 100px;
     margin-bottom: 70px;
 }
@@ -228,6 +228,7 @@ a:hover {
  .section__one {
     flex-direction: column;
     text-align: center;
+    background: #355129 url(images/coffee-5495609_1280.jpg) center/cover;
  }
 
  .section__one__text__title {
