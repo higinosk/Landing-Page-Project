@@ -179,7 +179,7 @@ a:hover {
     padding-top:50px;
     border-bottom: 0.4px solid #f1e7db;
     padding-bottom: 25px;
-    justify-content: space-between;
+    justify-content: space-evenly;
     font-weight: 700;
     font-size: 0.9rem;
 }
